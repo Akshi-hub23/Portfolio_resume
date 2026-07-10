@@ -181,12 +181,13 @@ ul {
 
 .btn-primary {
     color: #ffffff;
-    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    background:linear-gradient(135deg, #1565C0, #14B8A6);
     box-shadow: 0 12px 24px rgba(20, 100, 165, 0.22);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
+    background: linear-gradient(135deg, #0D47A1, #0F766E);
     box-shadow: 0 16px 32px rgba(20, 100, 165, 0.28);
 }
 

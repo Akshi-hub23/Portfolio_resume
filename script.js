@@ -3,6 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav a');
     const sections = document.querySelectorAll('main section[id]');
 
+    const setActiveNav = (id) => {
+        navLinks.forEach((link) => {
+            const href = link.getAttribute('href');
+            link.classList.toggle('active', href === `#${id}`);
+        });
+    };
+
+    const updateActiveSection = () => {
+        const offset = window.innerWidth <= 1024 ? 92 : 40;
+        let activeId = sections[0]?.getAttribute('id') || 'home';
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - offset;
+            if (window.scrollY >= sectionTop) {
+                activeId = section.getAttribute('id');
+            }
+        });
+
+        setActiveNav(activeId);
+    };
+
     if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -17,25 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         revealElements.forEach((el) => revealObserver.observe(el));
-
-        const navObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) return;
-
-                const id = entry.target.getAttribute('id');
-                navLinks.forEach((link) => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-                });
-            });
-        }, {
-            threshold: 0.3,
-            rootMargin: '-25% 0px -55% 0px'
-        });
-
-        sections.forEach((section) => navObserver.observe(section));
     } else {
         revealElements.forEach((el) => el.classList.add('active'));
     }
+
+    updateActiveSection();
+    window.addEventListener('scroll', updateActiveSection, { passive: true });
+    window.addEventListener('resize', updateActiveSection);
 
     document.querySelectorAll('.project-card, .cert-card').forEach((item, index) => {
         item.style.transitionDelay = `${Math.min(index * 0.06, 0.24)}s`;
@@ -50,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!targetElement) return;
 
             event.preventDefault();
-            const stickyOffset = window.innerWidth <= 1024 ? 132 : 24;
+            const stickyOffset = window.innerWidth <= 1024 ? 82 : 24;
             const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
 
             window.scrollTo({

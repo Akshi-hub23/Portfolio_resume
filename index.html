@@ -3,201 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshitha R | Portfolio & Resume</title>
-    <meta name="description" content="Portfolio of Akshitha R, ECE graduate with a minor in Business Data Analytics, experienced in React, Next.js, Node.js, Flask, and REST APIs.">
-    
-    <!-- Google Fonts: Outfit -->
+    <title>Akshitha R | Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Akshitha R, an ECE graduate and full-stack developer experienced in React, Next.js, Node.js, Flask, SQL, and REST APIs.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
+        <aside class="sidebar" aria-label="Primary navigation">
             <div class="sidebar-header">
                 <div class="profile-pic-container">
-                    <img src="https://ui-avatars.com/api/?name=Akshitha+R&background=003366&color=fff&size=200" alt="Akshitha R" class="profile-pic">
+                    <img src="https://ui-avatars.com/api/?name=Akshitha+R&background=0f4c81&color=fff&size=200" alt="Akshitha R" class="profile-pic">
                 </div>
                 <div class="profile-info">
                     <h2 class="profile-name">Akshitha R</h2>
-                    <p class="profile-tagline">ECE Graduate & Full-Stack Dev</p>
+                    <p class="profile-tagline">Full-Stack Developer</p>
                 </div>
             </div>
-            
+
             <nav class="nav-menu">
-                <a href="#home" class="nav-link active" id="nav-home">
+                <a href="#home" class="nav-link active">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
-                <a href="#projects" class="nav-link" id="nav-projects">
-                    <i class="fas fa-project-diagram"></i>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-diagram-project"></i>
                     <span>Projects</span>
                 </a>
-                <a href="#experience" class="nav-link" id="nav-experience">
+                <a href="#experience" class="nav-link">
                     <i class="fas fa-briefcase"></i>
                     <span>Experience</span>
                 </a>
-                <a href="#education" class="nav-link" id="nav-education">
+                <a href="#education" class="nav-link">
                     <i class="fas fa-graduation-cap"></i>
                     <span>Education</span>
                 </a>
-                <a href="#skills" class="nav-link" id="nav-skills">
+                <a href="#skills" class="nav-link">
                     <i class="fas fa-code"></i>
                     <span>Skills</span>
                 </a>
-                <a href="#contact" class="nav-link" id="nav-contact">
+                <a href="#contact" class="nav-link">
                     <i class="fas fa-envelope"></i>
                     <span>Contact</span>
                 </a>
             </nav>
 
             <div class="sidebar-footer">
-                <a href="Akshitha_Resume.pdf" target="_blank" download="Akshitha_Resume.pdf" class="btn btn-primary btn-full" id="download-resume">
-                    Download Resume <i class="fas fa-download"></i>
+                <a href="Akshitha_Resume.pdf" target="_blank" download="Akshitha_Resume.pdf" class="btn btn-primary btn-full">
+                    Resume <i class="fas fa-download"></i>
                 </a>
             </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="main-content">
-            <!-- Header/Top Nav for Mobile -->
             <header class="top-bar">
                 <div class="logo">AKSHITHA R</div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:rsakshisar@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/Akshi-hub23" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <div class="social-links" aria-label="Social links">
+                    <a href="mailto:rsakshisar@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Akshi-hub23" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </header>
 
-            <!-- Hero Section -->
+            <nav class="mobile-nav" aria-label="Section navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
             <section id="home" class="section hero">
-                <div class="hero-content">
-                    <span class="badge">ECE Graduate</span>
-                    <h1 class="hero-title">AKSHITHA R</h1>
-                    <p class="hero-subtitle">ECE Graduate | Minor in Business Data Analytics</p>
-                    <p class="hero-summary">
-                        Experienced in React, Next.js, Node.js, Flask, MySQL, and REST APIs. Gained development experience through a Python web development internship and a full-stack internship, applying skills across 3 independently built web projects with 2 live deployments. Eager to contribute to developer roles.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank" class="btn btn-outline">LinkedIn Profile</a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="eyebrow"><i class="fas fa-laptop-code"></i> Full-stack developer portfolio</span>
+                        <h1 class="hero-title">Akshitha R</h1>
+                        <p class="hero-subtitle">ECE graduate building clean, responsive web apps with React, Node.js, Flask, SQL, and REST APIs.</p>
+                        <p class="hero-summary">
+                            I build practical web products across frontend, backend, database, and deployment layers. My work includes real-time dashboards, admin workflows, bilingual interfaces, and production deployments that show both engineering fundamentals and user-focused thinking.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                            <a href="Akshitha_Resume.pdf" target="_blank" class="btn btn-outline">Open Resume <i class="fas fa-file-lines"></i></a>
+                            <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank" class="btn btn-outline">LinkedIn <i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
+
+                    <aside class="hero-panel reveal" aria-label="Developer highlights">
+                        <p class="panel-title">Developer Snapshot</p>
+                        <div class="stack-list">
+                            <div class="stack-item"><i class="fab fa-react"></i><span>React and Next.js interfaces</span></div>
+                            <div class="stack-item"><i class="fas fa-server"></i><span>Node.js, Flask, REST APIs</span></div>
+                            <div class="stack-item"><i class="fas fa-database"></i><span>MySQL and SQL Server</span></div>
+                            <div class="stack-item"><i class="fas fa-cloud-arrow-up"></i><span>GitHub and Vercel deployment</span></div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <strong>3+</strong>
+                                <span>Web projects</span>
+                            </div>
+                            <div class="stat">
+                                <strong>2</strong>
+                                <span>Internships</span>
+                            </div>
+                            <div class="stat">
+                                <strong>5</strong>
+                                <span>Sensor dashboard</span>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </section>
 
-            <!-- Projects Section -->
             <section id="projects" class="section">
                 <div class="section-header">
                     <span class="section-tag">Portfolio</span>
                     <h2 class="section-title">Featured Projects</h2>
                 </div>
-                
+
                 <div class="projects-grid">
-                    <div class="project-card reveal">
+                    <article class="project-card reveal">
                         <div class="project-header">
                             <h3 class="project-title">College Conference Website</h3>
-                            <span class="project-date">Aug – Oct 2025</span>
+                            <span class="project-date">Aug - Oct 2025</span>
                         </div>
-                        <p class="project-tech">HTML, CSS, JavaScript, Node.js, MySQL</p>
+                        <p class="project-tech">HTML, CSS, JavaScript, Node.js, Express, MySQL</p>
                         <ul class="project-list">
-                            <li>Built a responsive 7-page conference website using HTML, CSS, and JavaScript for the frontend, supporting 3 core workflows: user registration, login, and paper submission.</li>
-                            <li>Built an admin dashboard to track registrations, monitor paper submissions, and approve/reject papers with status tracking.</li>
-                            <li>Developed backend with Node.js, Express, and MySQL with 2 relational tables (users and papers) for data storage.</li>
+                            <li>Built a responsive 7-page conference website supporting registration, login, and paper submission workflows.</li>
+                            <li>Created an admin dashboard to track registrations, monitor submissions, and approve or reject papers with status tracking.</li>
+                            <li>Developed the backend with Express and MySQL using relational tables for users and papers.</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div class="project-card reveal">
+                    <article class="project-card reveal">
                         <div class="project-header">
                             <h3 class="project-title">Generative AI Dashboard</h3>
-                            <span class="project-date">Jan – Feb 2026</span>
+                            <span class="project-date">Jan - Feb 2026</span>
                         </div>
                         <p class="project-tech">Next.js, Node.js, TypeScript, Tailwind CSS, Vercel</p>
                         <ul class="project-list">
-                            <li>Built a Next.js (TypeScript) frontend with a lightweight Node.js server as part of the HCL GUVI Generative AI Intensive Program, visualizing data from 5 sensors with real-time alerts and anomaly explanations.</li>
-                            <li>Applied 3 Generative AI concepts: LLM-based insights, prompt engineering, and AI-assisted data interpretation.</li>
-                            <li>Designed a responsive, mobile-first UI using Tailwind CSS with clean frontend-backend separation.</li>
-                            <li>Deployed on Vercel with auto-deployment from GitHub. <a href="https://dashboard-akshitha.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>Built a TypeScript dashboard with a lightweight Node.js server for the HCL GUVI Generative AI Intensive Program.</li>
+                            <li>Visualized data from 5 sensors with real-time alerts, anomaly explanations, and AI-assisted insights.</li>
+                            <li>Designed a mobile-first UI and deployed it on Vercel with GitHub-based deployment. <a href="https://dashboard-akshitha.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a></li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div class="project-card reveal">
+                    <article class="project-card reveal">
                         <div class="project-header">
                             <h3 class="project-title">Intelligent Pesticide Sprinkler</h3>
-                            <span class="project-date">Dec 2025 – Mar 2026</span>
+                            <span class="project-date">Dec 2025 - Mar 2026</span>
                         </div>
                         <p class="project-tech">React, Flask, REST API, ESP32</p>
                         <ul class="project-list">
-                            <li>Built a fully bilingual (Tamil &amp; English) React web application for farmers to upload crop images, view AI-based disease detection results, and remotely trigger pesticide spraying.</li>
-                            <li>Developed a live sensor dashboard displaying real-time data from 4 sensors via REST API integration with a Flask backend.</li>
-                            <li>Solely responsible for the web application layer in a 2-team hardware-software system, collaborating with the hardware team on ESP32 integration.</li>
+                            <li>Built a bilingual Tamil and English React application for farmers to upload crop images and view AI-based disease detection results.</li>
+                            <li>Developed a live sensor dashboard displaying real-time data from 4 sensors through Flask REST API integration.</li>
+                            <li>Owned the web application layer while collaborating with the hardware team on ESP32 integration.</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </section>
 
-            <!-- Experience Section -->
             <section id="experience" class="section">
                 <div class="section-header">
+                    <span class="section-tag">Work</span>
                     <h2 class="section-title">Internship Experience</h2>
                 </div>
-                <div class="experience-card reveal">
-                    <div class="experience-header">
-                        <div class="exp-title-group">
-                            <h3 class="experience-company">Conprg Technologies</h3>
-                            <p class="experience-role">Full Stack Developer Intern</p>
+                <div class="experience-stack">
+                    <article class="experience-card reveal">
+                        <div class="experience-header">
+                            <div class="exp-title-group">
+                                <h3 class="experience-company">Conprg Technologies</h3>
+                                <p class="experience-role">Full Stack Developer Intern</p>
+                            </div>
+                            <span class="experience-date">Jan - Jun 2026</span>
                         </div>
-                        <span class="experience-date">Jan 2026 – Jun 2026</span>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Gained hands-on experience with React, SQL Server, and Git/GitHub, applied in building the Intelligent Pesticide Sprinkler — a 4-sensor real-time dashboard with REST API integration.</li>
-                        <li>Practised building React-based frontend interfaces with responsive layouts, learning how to handle real-time data rendering and component state management.</li>
-                        <li>Learned how frontend and backend layers communicate using JSON for structured data exchange via REST API calls to a .NET backend.</li>
-                        <li>Practised CRUD operations and database schema design using SQL Server.</li>
-                    </ul>
-                </div>
+                        <ul class="experience-list">
+                            <li>Gained hands-on experience with React, SQL Server, Git, and GitHub through the Intelligent Pesticide Sprinkler project.</li>
+                            <li>Practised responsive React interfaces, real-time data rendering, and component state management.</li>
+                            <li>Learned frontend-backend communication with JSON and REST API calls to a .NET backend.</li>
+                            <li>Practised CRUD operations and database schema design using SQL Server.</li>
+                        </ul>
+                    </article>
 
-                <div class="experience-card reveal mt-4">
-                    <div class="experience-header">
-                        <div class="exp-title-group">
-                            <h3 class="experience-company">Pemchip Infotech</h3>
-                            <p class="experience-role">Python Web Development Intern</p>
+                    <article class="experience-card reveal">
+                        <div class="experience-header">
+                            <div class="exp-title-group">
+                                <h3 class="experience-company">Pemchip Infotech</h3>
+                                <p class="experience-role">Python Web Development Intern</p>
+                            </div>
+                            <span class="experience-date">Jun - Jul 2025</span>
                         </div>
-                        <span class="experience-date">Jun 2025 – Jul 2025</span>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Gained core web development skills — HTML, CSS, JavaScript, and backend logic — applied in building the 7-page College Conference Website with login, registration, and admin workflows.</li>
-                        <li>Completed training exercises including a Python-based typing practice application, developing familiarity with input handling, application flow, and debugging.</li>
-                        <li>Practised building frontend pages including login interfaces, learning to structure HTML/CSS layouts and connect them to backend logic.</li>
-                    </ul>
+                        <ul class="experience-list">
+                            <li>Built core web development skills across HTML, CSS, JavaScript, backend logic, and debugging.</li>
+                            <li>Applied those skills in the College Conference Website with login, registration, and admin workflows.</li>
+                            <li>Completed training exercises including a Python typing practice application and frontend login pages.</li>
+                        </ul>
+                    </article>
                 </div>
             </section>
 
-            <!-- Education Section -->
             <section id="education" class="section">
                 <div class="section-header">
+                    <span class="section-tag">Academics</span>
                     <h2 class="section-title">Education</h2>
                 </div>
-                <div class="education-card reveal">
+                <article class="education-card reveal">
                     <div class="education-header">
                         <h3 class="education-school">Thanthai Periyar Government Institute of Technology, Vellore</h3>
-                        <span class="education-date">2022-2026</span>
+                        <span class="education-date">2022 - 2026</span>
                     </div>
-                    <p class="education-degree">B.E. Electronics and Communication Engineering (ECE) | CGPA: 7.93</p>
+                    <p class="education-degree">B.E. Electronics and Communication Engineering | CGPA: 7.93</p>
                     <p class="education-minor">Minor: Business Data Analytics</p>
-                </div>
+                </article>
             </section>
 
-            <!-- Skills Section -->
             <section id="skills" class="section">
                 <div class="section-header">
-                    <h2 class="section-title">Technical Expertise</h2>
+                    <span class="section-tag">Toolkit</span>
+                    <h2 class="section-title">Technical Skills</h2>
                 </div>
                 <div class="skills-container reveal">
                     <div class="skill-group">
@@ -208,7 +236,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-globe"></i> Web Technologies</h4>
+                        <h4 class="skill-group-title"><i class="fas fa-globe"></i> Frontend</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">HTML5</span>
                             <span class="skill-tag">CSS3</span>
@@ -220,7 +248,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-server"></i> Backend & Databases</h4>
+                        <h4 class="skill-group-title"><i class="fas fa-server"></i> Backend and Data</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">Express.js</span>
@@ -232,7 +260,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-tools"></i> Tools & Platforms</h4>
+                        <h4 class="skill-group-title"><i class="fas fa-screwdriver-wrench"></i> Tools and Platforms</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">VS Code</span>
                             <span class="skill-tag">Git</span>
@@ -243,53 +271,53 @@
                 </div>
 
                 <div class="section-header mt-4">
-                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <span class="section-tag">Proof</span>
+                    <h2 class="section-title">Certifications and Achievements</h2>
                 </div>
                 <div class="cert-grid">
-                    <div class="cert-card reveal">
-                        <h4 class="cert-title">1st Prize — Intercollege Hackathon</h4>
-                        <p class="cert-issuer">TPGIT · AI Chatbot using n8n</p>
+                    <article class="cert-card reveal">
+                        <h4 class="cert-title">1st Prize - Intercollege Hackathon</h4>
+                        <p class="cert-issuer">TPGIT - AI Chatbot using n8n</p>
                         <span class="cert-year">2026</span>
-                    </div>
-                    <div class="cert-card reveal">
+                    </article>
+                    <article class="cert-card reveal">
                         <h4 class="cert-title">C Programming Certification</h4>
                         <p class="cert-issuer">Independent</p>
                         <span class="cert-year">2026</span>
-                    </div>
-                    <div class="cert-card reveal">
+                    </article>
+                    <article class="cert-card reveal">
                         <h4 class="cert-title">Excel 2024 Essential Training</h4>
                         <p class="cert-issuer">LinkedIn Learning</p>
                         <span class="cert-year">2025</span>
-                    </div>
-                    <div class="cert-card reveal">
+                    </article>
+                    <article class="cert-card reveal">
                         <h4 class="cert-title">HTML, CSS and JavaScript</h4>
                         <p class="cert-issuer">LinkedIn Learning</p>
                         <span class="cert-year">2025</span>
-                    </div>
-                    <div class="cert-card reveal">
+                    </article>
+                    <article class="cert-card reveal">
                         <h4 class="cert-title">State Level Paper Presentation</h4>
                         <p class="cert-issuer">Arunai Engineering College</p>
                         <span class="cert-year">2023</span>
-                    </div>
+                    </article>
                 </div>
             </section>
 
-            <!-- Contact Section -->
             <section id="contact" class="section footer-cta">
                 <div class="contact-box reveal">
-                    <h2 class="section-title center">Get In Touch</h2>
-                    <p class="center contact-desc">Seeking developer roles — available for internships and full-time opportunities.</p>
+                    <h2 class="section-title center">Let's Connect</h2>
+                    <p class="center contact-desc">Open to developer internships and full-time opportunities where I can contribute across frontend, backend, and database-driven application work.</p>
                     <div class="contact-methods">
-                        <div class="method-card">
+                        <a class="method-card" href="mailto:rsakshisar@gmail.com">
                             <i class="fas fa-envelope"></i>
                             <h4>Email</h4>
                             <p>rsakshisar@gmail.com</p>
-                        </div>
-                        <div class="method-card">
+                        </a>
+                        <a class="method-card" href="tel:+919789877402">
                             <i class="fas fa-phone"></i>
                             <h4>Phone</h4>
                             <p>+91 9789877402</p>
-                        </div>
+                        </a>
                         <div class="method-card">
                             <i class="fas fa-location-dot"></i>
                             <h4>Location</h4>
@@ -302,17 +330,17 @@
             <footer class="footer">
                 <div class="footer-logo">AKSHITHA R</div>
                 <div class="footer-links">
-                    <a href="mailto:rsakshisar@gmail.com">rsakshisar@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4">LinkedIn Profile</a>
+                    <a href="mailto:rsakshisar@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank">LinkedIn</a>
                     <a href="https://github.com/Akshi-hub23" target="_blank">GitHub</a>
                     <a href="https://dashboard-akshitha.vercel.app/" target="_blank">Live Project</a>
+                    <a href="Akshitha_Resume.pdf" target="_blank">Resume</a>
                 </div>
                 <p class="copyright">&copy; 2026 Akshitha R. All rights reserved.</p>
             </footer>
         </main>
     </div>
 
-    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>

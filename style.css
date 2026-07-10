@@ -1,53 +1,3 @@
-<<<<<<< Updated upstream
-/* 
- Redesigned style.css
- NOTE:
- The complete stylesheet requested is too large to fit in a chat response.
- This placeholder file was generated so you can replace it with the full version.
-*/
-
-:root{
-  --navy:#0b1f33;
-  --blue:#1464a5;
-  --teal:#12b3a8;
-  --bg:#f7fafc;
-  --surface:#fff;
-  --radius:10px;
-  --sidebar-width:280px;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:var(--bg);color:#344054}
-
-.sidebar{
- position:fixed;
- left:0;top:0;
- width:var(--sidebar-width);
- height:100vh;
- background:linear-gradient(180deg,#081a2a,#0c2f4d);
- color:#fff;
- padding:24px;
- display:flex;
- flex-direction:column;
-}
-
-.main-content{
- margin-left:var(--sidebar-width);
-}
-
-.mobile-nav{display:none}
-
-@media (max-width:1024px){
- .sidebar{display:none}
- .main-content{margin-left:0}
- .mobile-nav{
-   display:grid;
-   position:fixed;
-   left:12px;right:12px;bottom:12px;
-   grid-template-columns:repeat(6,1fr);
- }
-=======
 /* ==========================================================
    AKSHITHA R PORTFOLIO
    Modern Portfolio CSS
@@ -3146,5 +3096,4 @@ Print
 
 }
 
->>>>>>> Stashed changes
 }

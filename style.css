@@ -476,8 +476,9 @@ ul {
     flex-direction: column;
     min-height: 100%;
     padding: 1.1rem;
-    overflow: hidden;
+    overflow: visible;
     transition: var(--transition);
+    height:auto;
 }
 
 .project-card::before {
@@ -1348,8 +1349,10 @@ ul {
         font-size: 0.72rem;
     }
 
-    .project-list li:nth-child(n + 3),
-    .experience-list li:nth-child(n + 4) {
-        display: none;
+    .project-list li,
+    .experience-list li{
+        font-size:0.88rem;
+        line-height:1.5;
     }
+
 }

@@ -388,6 +388,39 @@ ul {
     top: -2px;
 }
 
+.project-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    opacity: 0.8;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.education-date {
+    background: var(--primary-light);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
 /* Experience Styling */
 .experience-card {
     background: var(--bg-white);

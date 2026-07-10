@@ -1299,6 +1299,20 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .social-links {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .social-links a {
+        display: inline-flex !important;
+        visibility: visible !important;
+    }
+
+    .social-links .fa-github {
+        display: inline-block !important;
+    }
 }
 
 @media (max-width: 380px) {

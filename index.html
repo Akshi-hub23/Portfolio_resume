@@ -43,8 +43,8 @@
                 <a href="#home" class="active"><i class="fas fa-house"></i><span>Home</span></a>
                 <a href="#projects"><i class="fas fa-layer-group"></i><span>Projects</span></a>
                 <a href="#experience"><i class="fas fa-briefcase"></i><span>Exp</span></a>
-                <a href="#education"><i class="fas fa-graduation-cap"></i><span>Edu</span></a>
                 <a href="#skills"><i class="fas fa-code"></i><span>Skills</span></a>
+                <a href="#education"><i class="fas fa-graduation-cap"></i><span>Edu</span></a>
                 <a href="#contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
             </nav>
 
@@ -52,7 +52,7 @@
                 <div class="hero-grid">
                     <div class="hero-content">
                         <span class="eyebrow"><span class="availability-dot"></span> OPEN TO FULL-STACK OPPORTUNITIES</span>
-                        <h1 class="hero-title">Akshitha R<span class="hero-period">.</span></h1>
+                        <h1 class="hero-title">Akshitha <span class="hero-initial">R<span class="hero-period">.</span></span></h1>
                         <p class="hero-subtitle">Full-stack developer building useful products from interface to API.</p>
                         <p class="hero-summary">
                             I work across React and TypeScript interfaces, ASP.NET Core APIs, and PostgreSQL. I care about the details that make software feel clear, reliable, and genuinely useful.
@@ -101,16 +101,6 @@
                 </div>
             </section>
 
-            <section class="stack-strip" aria-label="Core technologies">
-                <span class="stack-caption">MY EVERYDAY STACK</span>
-                <ul>
-                    <li><i class="fab fa-react"></i> React</li>
-                    <li><i class="fas fa-code"></i> TypeScript</li>
-                    <li><i class="fas fa-server"></i> ASP.NET Core</li>
-                    <li><i class="fas fa-database"></i> PostgreSQL</li>
-                    <li><i class="fas fa-wind"></i> Tailwind CSS</li>
-                </ul>
-            </section>
             <section id="projects" class="section">
                 <div class="section-header">
                     <span class="section-tag">Portfolio</span>
@@ -126,29 +116,71 @@
                 <p class="visually-hidden" id="project-filter-status" aria-live="polite">Showing all 3 projects.</p>
 
                 <div class="projects-grid">
-                    <article class="project-card reveal" data-category="full-stack">
-                        <div class="project-icon"><i class="fas fa-bag-shopping"></i></div>
-                        <div class="project-header">
-                            <h3 class="project-title">NovaCart</h3>
-                            <span class="project-date">Jan - May 2026</span>
+                    <article class="project-card featured-project featured-project--novacart reveal" data-category="full-stack">
+                        <div class="project-art project-art--novacart" aria-hidden="true">
+                            <span class="project-art-kicker">01 / FULL-STACK E-COMMERCE</span>
+                            <span class="project-art-symbol"><i class="fas fa-bag-shopping"></i></span>
+                            <p class="project-art-title">Nova<span>Cart</span></p>
+                            <span class="project-art-stack">REACT <i class="fas fa-plus"></i> ASP.NET CORE</span>
                         </div>
-                        <p class="project-tech">React, TypeScript, ASP.NET Core 10, C#, EF Core, PostgreSQL</p>
-                        <div class="project-highlights">
-                            <span>Full-stack e-commerce</span>
-                            <span>JWT authentication</span>
-                            <span>Razorpay test mode</span>
-                        </div>
-                        <ul class="project-list">
-                            <li>Built a full-stack shopping experience with product discovery, search, filters, sorting, pagination, cart, wishlist, checkout, orders, reviews, and profiles.</li>
-                            <li>Added JWT authentication and role-based authorization for customer and administrator accounts.</li>
-                            <li>Developed documented REST APIs with ASP.NET Core and EF Core, and integrated PostgreSQL and Razorpay test payments.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a class="project-action" href="https://github.com/Akshi-hub23/NovaCart" target="_blank" rel="noopener noreferrer">Source code <i class="fab fa-github"></i></a>
+                        <div class="featured-project-content">
+                            <div class="project-icon"><i class="fas fa-bag-shopping"></i></div>
+                            <div class="project-header">
+                                <h3 class="project-title">NovaCart</h3>
+                                <span class="project-date">Jan - May 2026</span>
+                            </div>
+                            <p class="project-tech">React, TypeScript, Vite, ASP.NET Core 10, C#, EF Core, PostgreSQL, REST API, JWT, Swagger, Razorpay</p>
+                            <div class="project-highlights">
+                                <span>Full-stack e-commerce</span>
+                                <span>JWT authentication</span>
+                                <span>Razorpay test mode</span>
+                            </div>
+                            <ul class="project-list">
+                                <li>Built a full-stack shopping experience with product discovery, search, filters, sorting, pagination, cart, wishlist, checkout, orders, reviews, and profiles.</li>
+                                <li>Added JWT authentication and role-based authorization for customer and administrator accounts.</li>
+                                <li>Developed documented REST APIs with ASP.NET Core and EF Core, and integrated PostgreSQL and Razorpay test payments.</li>
+                            </ul>
+                            <details class="project-case-study">
+                                <summary>Explore the product decisions <i class="fas fa-plus" aria-hidden="true"></i></summary>
+                                <div class="case-study-panel">
+                                    <div class="case-intro">
+                                        <span class="case-label">Challenge</span>
+                                        <p>Connect product discovery, purchasing, and administration in one responsive commerce experience.</p>
+                                    </div>
+                                    <div class="case-story-block">
+                                        <span class="case-label">Customer journey</span>
+                                        <ol class="case-flow" aria-label="NovaCart customer journey">
+                                            <li><span>01</span><strong>Discover</strong></li>
+                                            <li><span>02</span><strong>Product</strong></li>
+                                            <li><span>03</span><strong>Cart</strong></li>
+                                            <li><span>04</span><strong>Checkout</strong></li>
+                                            <li><span>05</span><strong>Orders</strong></li>
+                                        </ol>
+                                    </div>
+                                    <div class="case-story-grid">
+                                        <div class="case-story-block">
+                                            <span class="case-label">Design &amp; engineering choices</span>
+                                            <ul class="case-note-list">
+                                                <li>Catalog search, filters, sorting, and pagination support product discovery.</li>
+                                                <li>JWT authorization separates customer and administrator experiences.</li>
+                                                <li>DTOs, service-layer logic, validation, error handling, logging, and Swagger document the API boundary.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="case-story-block case-outcome">
+                                            <span class="case-label">Delivered scope</span>
+                                            <p>A responsive customer-to-order flow, role-protected admin tools, PostgreSQL persistence, and Razorpay test-mode checkout.</p>
+                                            <span class="case-stat"><strong>2</strong> account roles</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
+                            <div class="project-links">
+                                <a class="project-action" href="https://github.com/Akshi-hub23/NovaCart" target="_blank" rel="noopener noreferrer">Source code <i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card featured-project reveal" data-category="ai-data full-stack">
+                    <article class="project-card project-card--dashboard reveal" data-category="ai-data full-stack">
                         <a class="project-preview" href="https://dashboard-akshitha.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the live Generative AI Dashboard">
                             <img src="assets/generative-ai-dashboard-overview.jpeg" alt="Generative AI Dashboard overview showing five active sensors and real-time readings" loading="lazy" decoding="async">
                             <span class="preview-badge"><i class="fas fa-arrow-up-right-from-square"></i> Live preview</span>
@@ -169,6 +201,86 @@
                             <li>Visualized data from five sensors with real-time alerts and anomaly explanations, applying LLM-based insights, prompt engineering, and AI-assisted data interpretation.</li>
                             <li>Designed a responsive, mobile-first Tailwind CSS interface and deployed it to Vercel with GitHub auto-deployments.</li>
                         </ul>
+                        <details class="project-case-study project-case-study--process">
+                            <summary>
+                                <span class="process-trigger-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
+                                <span class="process-trigger-copy">
+                                    <span class="process-trigger-kicker">Behind the interface</span>
+                                    <strong>Follow the design process</strong>
+                                </span>
+                                <span class="process-trigger-meta">
+                                    <span>04</span>
+                                    <small>screen states</small>
+                                </span>
+                                <span class="process-trigger-arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                            </summary>
+                            <div class="case-study-panel">
+                                <div class="case-intro">
+                                    <span class="case-label">Challenge</span>
+                                    <p>Make sensor health, detailed readings, raw values, and alert actions easy to inspect in one mobile-first dashboard.</p>
+                                </div>
+                                <div class="case-story-block">
+                                    <span class="case-label">Information flow</span>
+                                    <ol class="case-flow" aria-label="Dashboard information flow">
+                                        <li><span>01</span><strong>Overview</strong></li>
+                                        <li><span>02</span><strong>Sensor detail</strong></li>
+                                        <li><span>03</span><strong>Raw data</strong></li>
+                                        <li><span>04</span><strong>Alerts</strong></li>
+                                    </ol>
+                                </div>
+                                <div class="case-story-block">
+                                    <div class="case-gallery-heading">
+                                        <span class="case-label">Captured interface states</span>
+                                        <span class="case-gallery-hint"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i> Select an image to zoom</span>
+                                    </div>
+                                    <div class="case-gallery">
+                                        <figure class="case-figure">
+                                            <button class="case-shot" type="button" data-image-title="Dashboard overview" aria-label="Zoom in on the dashboard overview">
+                                                <img src="assets/generative-ai-dashboard-overview.jpeg" alt="Overview showing five sensors, their status, and current readings" loading="lazy" decoding="async">
+                                                <span class="case-shot-zoom" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+                                            </button>
+                                            <figcaption><strong>Overview</strong><span>Sensor health at a glance</span></figcaption>
+                                        </figure>
+                                        <figure class="case-figure">
+                                            <button class="case-shot" type="button" data-image-title="Sensor detail and trend" aria-label="Zoom in on the sensor detail view">
+                                                <img src="assets/generative-ai-dashboard-sensors.jpeg" alt="Sensor detail with current, average, minimum, maximum, and a 24-hour trend" loading="lazy" decoding="async">
+                                                <span class="case-shot-zoom" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+                                            </button>
+                                            <figcaption><strong>Sensor detail</strong><span>Current value and trend</span></figcaption>
+                                        </figure>
+                                        <figure class="case-figure">
+                                            <button class="case-shot" type="button" data-image-title="Raw sensor data" aria-label="Zoom in on the raw sensor data table">
+                                                <img src="assets/generative-ai-dashboard-raw-data.jpeg" alt="Raw sensor table showing timestamps, values, statuses, and deviations" loading="lazy" decoding="async">
+                                                <span class="case-shot-zoom" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+                                            </button>
+                                            <figcaption><strong>Raw data</strong><span>Readings and deviations</span></figcaption>
+                                        </figure>
+                                        <figure class="case-figure">
+                                            <button class="case-shot" type="button" data-image-title="Alert severity and acknowledgement states" aria-label="Zoom in on the alerts and acknowledgement view">
+                                                <img src="assets/generative-ai-dashboard-alerts.jpeg" alt="Alert list with critical, high, and acknowledged states and acknowledgement actions" loading="lazy" decoding="async">
+                                                <span class="case-shot-zoom" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
+                                            </button>
+                                            <figcaption><strong>Alerts &amp; settings</strong><span>Severity, explanation, and acknowledgement</span></figcaption>
+                                        </figure>
+                                    </div>
+                                    <p class="case-annotation"><i class="fas fa-circle-exclamation" aria-hidden="true"></i> In the captured alert state, severity and the acknowledgement action appear together so the next step is clear.</p>
+                                </div>
+                                <div class="case-story-grid">
+                                    <div class="case-story-block">
+                                        <span class="case-label">Design handoff</span>
+                                        <p>The project documents a Visily-to-Next.js/Tailwind handoff, with separate overview, sensor, raw-data, and alert views.</p>
+                                    </div>
+                                    <div class="case-story-block case-outcome">
+                                        <span class="case-label">Delivered scope</span>
+                                        <div class="case-stat-row">
+                                            <span class="case-stat"><strong>5</strong> sensor streams</span>
+                                            <span class="case-stat"><strong>3</strong> GenAI concepts</span>
+                                        </div>
+                                        <p class="case-context">The repository describes sample JSON-backed readings and an AI integration point; these are demo states, not measured production sensor outcomes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                         <div class="project-links">
                             <a class="project-action project-action-primary" href="https://dashboard-akshitha.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a>
                             <a class="project-action" href="https://github.com/Akshi-hub23/dashboard" target="_blank" rel="noopener noreferrer">Source code <i class="fab fa-github"></i></a>
@@ -176,6 +288,12 @@
                     </article>
 
                     <article class="project-card reveal" data-category="full-stack">
+                        <div class="project-poster project-poster--conference" aria-hidden="true">
+                            <span class="project-poster-kicker">COLLEGE CONFERENCE</span>
+                            <span class="project-poster-count">07</span>
+                            <span class="project-poster-label">RESPONSIVE PAGES</span>
+                            <i class="fas fa-users-gear" aria-hidden="true"></i>
+                        </div>
                         <div class="project-icon"><i class="fas fa-users-gear"></i></div>
                         <div class="project-header">
                             <h3 class="project-title">College Conference Website</h3>
@@ -192,45 +310,172 @@
                             <li>Created an admin dashboard to review submissions and manage approvals, rejections, and status tracking.</li>
                             <li>Implemented Node.js and Express APIs backed by MySQL tables for users and papers.</li>
                         </ul>
+                        <details class="project-case-study">
+                            <summary>Explore the participant &amp; review flow <i class="fas fa-plus" aria-hidden="true"></i></summary>
+                            <div class="case-study-panel">
+                                <div class="case-intro">
+                                    <span class="case-label">Challenge</span>
+                                    <p>Give conference participants a clear submission path and organizers a way to review papers and communicate status.</p>
+                                </div>
+                                <div class="case-story-block">
+                                    <span class="case-label">Participant journey</span>
+                                    <ol class="case-flow" aria-label="Conference participant journey">
+                                        <li><span>01</span><strong>Register</strong></li>
+                                        <li><span>02</span><strong>Sign in</strong></li>
+                                        <li><span>03</span><strong>Submit paper</strong></li>
+                                        <li><span>04</span><strong>Admin review</strong></li>
+                                        <li><span>05</span><strong>Track status</strong></li>
+                                    </ol>
+                                </div>
+                                <div class="case-story-grid">
+                                    <div class="case-story-block">
+                                        <span class="case-label">Review states</span>
+                                        <div class="case-state-list">
+                                            <span>Submitted</span><i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                            <span>Approved or rejected</span><i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                            <span>Status tracked</span>
+                                        </div>
+                                    </div>
+                                    <div class="case-story-block case-outcome">
+                                        <span class="case-label">Delivered scope</span>
+                                        <p>Seven responsive pages connect registration, login, paper submission, and admin review, backed by Node.js, Express, and MySQL.</p>
+                                        <span class="case-stat"><strong>7</strong> responsive pages</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                        <div class="project-links">
+                            <a class="project-action" href="https://github.com/Akshi-hub23/Internship-project" target="_blank" rel="noopener noreferrer">Source code <i class="fab fa-github"></i></a>
+                        </div>
                     </article>
                 </div>
+                <dialog class="project-image-dialog" id="project-image-dialog" aria-labelledby="project-image-dialog-title">
+                    <div class="project-image-dialog-header">
+                        <p id="project-image-dialog-title">Dashboard screen</p>
+                        <div class="project-image-controls" aria-label="Image zoom controls">
+                            <button type="button" id="project-image-zoom-out" aria-label="Zoom out" disabled><i class="fas fa-magnifying-glass-minus" aria-hidden="true"></i></button>
+                            <span id="project-image-zoom-level" aria-live="polite">100%</span>
+                            <button type="button" id="project-image-zoom-in" aria-label="Zoom in"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i></button>
+                            <button type="button" id="project-image-close" aria-label="Close image viewer" autofocus><i class="fas fa-xmark" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-image-viewport">
+                        <img id="project-image-dialog-image" alt="">
+                    </div>
+                </dialog>
             </section>
 
             <section id="experience" class="section">
                 <div class="section-header">
-                    <span class="section-tag">Work</span>
-                    <h2 class="section-title">Experience</h2>
+                    <span class="section-tag">About &amp; Work</span>
+                    <h2 class="section-title">About &amp; Experience</h2>
                 </div>
-                <div class="experience-stack">
-                    <article class="experience-card reveal">
-                        <div class="experience-header">
-                            <div class="exp-title-group">
-                                <h3 class="experience-company">Conprg Technologies</h3>
-                                <p class="experience-role">Full Stack Developer</p>
-                            </div>
-                            <span class="experience-date">Jun 2026 - Present</span>
-                        </div>
-                        <ul class="experience-list">
-                            <li>Investigate and resolve issues in a Singapore-based project, analyzing reported problems and implementing fixes with the team lead.</li>
-                            <li>Improved filter behavior with React useState and useCallback, keeping selections consistent during navigation.</li>
-                            <li>Manage database activities for the RMKV client project using DBeaver.</li>
-                        </ul>
+                <div class="about-experience-layout">
+                    <article class="about-card reveal">
+                        <p class="about-eyebrow">A little about me</p>
+                        <h3 class="about-title">Full-stack developer building useful products from interface to API.</h3>
+                        <p class="about-copy">I work across React and TypeScript interfaces, ASP.NET Core APIs, and PostgreSQL. I care about the details that make software feel clear, reliable, and genuinely useful.</p>
                     </article>
+                    <div class="experience-details">
+                        <h3 class="experience-subtitle">Career timeline</h3>
+                        <div class="experience-stack">
+                            <article class="experience-card reveal">
+                                <div class="experience-header">
+                                    <div class="exp-title-group">
+                                        <h4 class="experience-company">Conprg Technologies</h4>
+                                        <p class="experience-role">Full Stack Developer</p>
+                                    </div>
+                                    <span class="experience-date">Jun 2026 - Present</span>
+                                </div>
+                                <ul class="experience-list">
+                                    <li>Investigate and resolve issues in a Singapore-based project, analyzing reported problems and implementing fixes with the team lead.</li>
+                                    <li>Improved filter behavior with React useState and useCallback, keeping selections consistent during navigation.</li>
+                                    <li>Manage database activities for the RMKV client project using DBeaver.</li>
+                                </ul>
+                            </article>
 
-                    <article class="experience-card reveal">
-                        <div class="experience-header">
-                            <div class="exp-title-group">
-                                <h3 class="experience-company">Conprg Technologies</h3>
-                                <p class="experience-role">Full Stack Developer Intern</p>
-                            </div>
-                            <span class="experience-date">Jan - May 2026</span>
+                            <article class="experience-card reveal">
+                                <div class="experience-header">
+                                    <div class="exp-title-group">
+                                        <h4 class="experience-company">Conprg Technologies</h4>
+                                        <p class="experience-role">Full Stack Developer Intern</p>
+                                    </div>
+                                    <span class="experience-date">Jan - May 2026</span>
+                                </div>
+                                <ul class="experience-list">
+                                    <li>Independently developed NovaCart, an e-commerce application using React, TypeScript, ASP.NET Core 10, C#, EF Core, and PostgreSQL.</li>
+                                    <li>Built React interfaces and integrated them with .NET REST APIs.</li>
+                                    <li>Practised CRUD operations and SQL Server schema management, using Git and GitHub for version control.</li>
+                                </ul>
+                            </article>
                         </div>
-                        <ul class="experience-list">
-                            <li>Independently developed NovaCart, an e-commerce application using React, TypeScript, ASP.NET Core 10, C#, EF Core, and PostgreSQL.</li>
-                            <li>Built React interfaces and integrated them with .NET REST APIs.</li>
-                            <li>Practised CRUD operations and SQL Server schema management, using Git and GitHub for version control.</li>
-                        </ul>
-                    </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="section-header">
+                    <span class="section-tag">Toolkit</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-container reveal">
+                    <div class="skill-group skill-group--programming">
+                        <h4 class="skill-group-title"><i class="fas fa-terminal" aria-hidden="true"></i> Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C#</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group--frontend">
+                        <h4 class="skill-group-title"><i class="fas fa-globe" aria-hidden="true"></i> Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Responsive design</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group--backend">
+                        <h4 class="skill-group-title"><i class="fas fa-server" aria-hidden="true"></i> Backend and Data</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">ASP.NET Core Web API</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">JSON</span>
+                            <span class="skill-tag">JWT</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group--databases">
+                        <h4 class="skill-group-title"><i class="fas fa-database" aria-hidden="true"></i> Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">Entity Framework Core</span>
+                            <span class="skill-tag">CRUD operations</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group--tools">
+                        <h4 class="skill-group-title"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i> Tools and Platforms</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Visual Studio</span>
+                            <span class="skill-tag">pgAdmin 4</span>
+                            <span class="skill-tag">DBeaver</span>
+                            <span class="skill-tag">Swagger</span>
+                            <span class="skill-tag">Vite</span>
+                            <span class="skill-tag">Razorpay</span>
+                            <span class="skill-tag">Vercel</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -247,72 +492,6 @@
                     <p class="education-degree">B.E. Electronics and Communication Engineering | CGPA: 7.93 / 10</p>
                     <p class="education-minor">Minor: Business Data Analytics</p>
                 </article>
-            </section>
-
-            <section id="skills" class="section">
-                <div class="section-header">
-                    <span class="section-tag">Toolkit</span>
-                    <h2 class="section-title">Technical Skills</h2>
-                </div>
-                <div class="skills-container reveal">
-                    <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-terminal"></i> Programming</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">C#</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-globe"></i> Frontend</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">Tailwind CSS</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">Responsive design</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-server"></i> Backend and Data</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">ASP.NET Core Web API</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">RESTful APIs</span>
-                            <span class="skill-tag">JSON</span>
-                            <span class="skill-tag">JWT</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-database"></i> Databases</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">Entity Framework Core</span>
-                            <span class="skill-tag">CRUD operations</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4 class="skill-group-title"><i class="fas fa-screwdriver-wrench"></i> Tools and Platforms</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">Visual Studio</span>
-                            <span class="skill-tag">pgAdmin 4</span>
-                            <span class="skill-tag">DBeaver</span>
-                            <span class="skill-tag">Swagger</span>
-                            <span class="skill-tag">Vite</span>
-                            <span class="skill-tag">Razorpay</span>
-                            <span class="skill-tag">Vercel</span>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="section-header mt-4">
                     <span class="section-tag">Proof</span>
@@ -350,31 +529,55 @@
 
             <section id="contact" class="section footer-cta">
                 <div class="contact-box reveal">
-                    <h2 class="section-title center">Let's Connect</h2>
-                    <p class="center contact-desc">I’m open to full-stack developer opportunities and collaborations. If you’re building something useful, let’s talk.</p>
+                    <div class="contact-intro">
+                        <h2 class="section-title">Let's Connect</h2>
+                        <p class="contact-desc">I’m open to full-stack developer opportunities and collaborations. If you’re building something useful, let’s talk.</p>
+                    </div>
                     <div class="contact-methods">
                         <a class="method-card" href="mailto:rsakshisar@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Email</h4>
-                            <p>rsakshisar@gmail.com</p>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div class="method-copy">
+                                <h4>Email</h4>
+                                <p>rsakshisar@gmail.com</p>
+                            </div>
                         </a>
                         <a class="method-card" href="tel:+919789877402">
-                            <i class="fas fa-phone"></i>
-                            <h4>Phone</h4>
-                            <p>+91 9789877402</p>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div class="method-copy">
+                                <h4>Phone</h4>
+                                <p>+91 9789877402</p>
+                            </div>
                         </a>
-                        <div class="method-card">
-                            <i class="fas fa-location-dot"></i>
-                            <h4>Location</h4>
-                            <p>Chennai, Tamil Nadu</p>
+                        <a class="method-card" href="https://www.linkedin.com/in/akshitha-ravi-4596362a4" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <div class="method-copy">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/akshitha-ravi-4596362a4</p>
+                            </div>
+                        </a>
+                        <a class="method-card" href="https://github.com/Akshi-hub23" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <div class="method-copy">
+                                <h4>GitHub</h4>
+                                <p>github.com/Akshi-hub23</p>
+                            </div>
+                        </a>
+                        <div class="method-card method-card-location">
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            <div class="method-copy">
+                                <h4>Location</h4>
+                                <p>Chennai, Tamil Nadu</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <footer class="footer">
-                
-                <p class="copyright">&copy; <span id="current-year">2026</span> Akshitha R. Built with care.</p>
+                <div class="footer-inner">
+                    <p class="copyright">&copy; <span id="current-year">2026</span> Akshitha R. Built with care.</p>
+                    <a class="footer-top-link" href="#home">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
             </footer>
         </main>
     </div>

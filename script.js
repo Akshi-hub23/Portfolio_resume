@@ -88,6 +88,67 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const projectImageDialog = document.querySelector('#project-image-dialog');
+    const projectImage = document.querySelector('#project-image-dialog-image');
+    const projectImageTitle = document.querySelector('#project-image-dialog-title');
+    const zoomLevel = document.querySelector('#project-image-zoom-level');
+    const zoomIn = document.querySelector('#project-image-zoom-in');
+    const zoomOut = document.querySelector('#project-image-zoom-out');
+    const closeProjectImage = document.querySelector('#project-image-close');
+
+    if (projectImageDialog instanceof HTMLDialogElement && projectImage instanceof HTMLImageElement
+        && projectImageTitle && zoomLevel && zoomIn && zoomOut && closeProjectImage) {
+        let zoom = 1;
+
+        const updateZoom = () => {
+            projectImage.style.width = `${zoom * 100}%`;
+            zoomLevel.textContent = `${Math.round(zoom * 100)}%`;
+            zoomOut.disabled = zoom <= 0.75;
+            zoomIn.disabled = zoom >= 2.5;
+        };
+
+        document.querySelectorAll('.case-shot').forEach((button) => {
+            button.addEventListener('click', () => {
+                const image = button.querySelector('img');
+                if (!image) return;
+
+                zoom = 1;
+                projectImage.src = image.currentSrc || image.src;
+                projectImage.alt = image.alt;
+                projectImageTitle.textContent = button.getAttribute('data-image-title') || image.alt;
+                updateZoom();
+                projectImageDialog.showModal();
+            });
+        });
+
+        zoomIn.addEventListener('click', () => {
+            zoom = Math.min(2.5, zoom + 0.25);
+            updateZoom();
+        });
+
+        zoomOut.addEventListener('click', () => {
+            zoom = Math.max(0.75, zoom - 0.25);
+            updateZoom();
+        });
+
+        closeProjectImage.addEventListener('click', () => projectImageDialog.close());
+        projectImageDialog.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                projectImageDialog.close();
+            }
+        });
+        projectImageDialog.addEventListener('click', (event) => {
+            if (event.target === projectImageDialog) projectImageDialog.close();
+        });
+        projectImageDialog.addEventListener('close', () => {
+            projectImage.removeAttribute('src');
+            projectImage.alt = '';
+            zoom = 1;
+            updateZoom();
+        });
+    }
+
     document.querySelectorAll('.project-card, .cert-card').forEach((item, index) => {
         item.style.transitionDelay = `${Math.min(index * 0.06, 0.24)}s`;
     });
